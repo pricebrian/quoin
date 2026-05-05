@@ -70,6 +70,18 @@ export default function ShibeParkPage() {
                 </p>
               </div>
             </div>
+
+            <div className="grid grid-cols-3 gap-px bg-neutral-200 border border-neutral-200 mt-4">
+              {['Save', 'View in Room', 'Share'].map((label) => (
+                <button
+                  key={label}
+                  type="button"
+                  className="bg-white px-3 py-4 text-center font-mono text-[11px] tracking-[0.18em] uppercase text-neutral-600 hover:text-neutral-900 transition-colors"
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
           </section>
 
           <aside className="max-w-[420px]">
@@ -92,6 +104,24 @@ export default function ShibeParkPage() {
               <p className="font-serif text-sm text-neutral-500 mt-2">Unframed. Framed editions from US$425.</p>
             </div>
 
+            <div className="space-y-4 border border-neutral-200 p-5 mb-6">
+              <div>
+                <label className="block font-mono text-[11px] tracking-[0.18em] uppercase text-neutral-400 mb-2">Size</label>
+                <div className="grid grid-cols-2 gap-2">
+                  <button type="button" className="border border-neutral-900 px-3 py-3 text-left font-serif text-sm">18 × 24 in</button>
+                  <button type="button" className="border border-neutral-300 px-3 py-3 text-left font-serif text-sm text-neutral-500">24 × 32 in</button>
+                </div>
+              </div>
+              <div>
+                <label className="block font-mono text-[11px] tracking-[0.18em] uppercase text-neutral-400 mb-2">Frame</label>
+                <div className="grid grid-cols-3 gap-2">
+                  <button type="button" className="border border-neutral-900 px-3 py-3 text-left font-serif text-sm">Unframed</button>
+                  <button type="button" className="border border-neutral-300 px-3 py-3 text-left font-serif text-sm text-neutral-500">White Oak</button>
+                  <button type="button" className="border border-neutral-300 px-3 py-3 text-left font-serif text-sm text-neutral-500">Matte Black</button>
+                </div>
+              </div>
+            </div>
+
             <div className="space-y-3 mb-5">
               <a
                 href="mailto:press@byquoin.com?subject=Shibe%20Park%20inquiry"
@@ -106,57 +136,47 @@ export default function ShibeParkPage() {
                 Request Release Notice
               </button>
             </div>
+          </aside>
+        </div>
 
-            <div className="grid grid-cols-3 gap-px bg-neutral-200 border border-neutral-200 mb-10">
-              {['Save', 'View in Room', 'Share'].map((label) => (
-                <button
-                  key={label}
-                  type="button"
-                  className="bg-white px-3 py-4 text-center font-mono text-[11px] tracking-[0.18em] uppercase text-neutral-600 hover:text-neutral-900 transition-colors"
-                >
-                  {label}
-                </button>
+        <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] gap-10 md:gap-14 mt-16 border-t border-neutral-200 pt-10">
+          <section>
+            <h2 className="font-serif text-lg mb-5">About the work</h2>
+            <dl className="space-y-4">
+              {details.map(([term, value]) => (
+                <div key={term} className="grid grid-cols-[150px_1fr] gap-4 text-sm">
+                  <dt className="text-neutral-500">{term}</dt>
+                  <dd className="text-neutral-800">{value}</dd>
+                </div>
               ))}
+            </dl>
+          </section>
+
+          <section>
+            <div className="mb-4">
+              <p className="font-serif text-2xl mb-1">Shibe Park</p>
+              <p className="font-serif text-sm text-neutral-500">Philadelphia ballpark, opened 1909</p>
             </div>
 
-            <section className="border-t border-neutral-200 pt-6 mb-10">
-              <h2 className="font-serif text-lg mb-5">About the work</h2>
-              <dl className="space-y-4">
-                {details.map(([term, value]) => (
-                  <div key={term} className="grid grid-cols-[150px_1fr] gap-4 text-sm">
-                    <dt className="text-neutral-500">{term}</dt>
-                    <dd className="text-neutral-800">{value}</dd>
-                  </div>
-                ))}
-              </dl>
-            </section>
+            <p className="font-serif text-[15px] leading-7 text-neutral-700 mb-6">
+              Opened in 1909, Shibe Park helped define the modern American ballpark. Its concrete-and-steel construction,
+              formal exterior, and civic scale marked a break from the earlier wooden grounds of professional baseball.
+              For Quoin, it is a near-ideal first subject: a stadium where architecture, urban ambition, and sporting memory meet.
+            </p>
 
-            <section className="border-t border-neutral-200 pt-6">
-              <div className="mb-4">
-                <p className="font-serif text-2xl mb-1">Shibe Park</p>
-                <p className="font-serif text-sm text-neutral-500">Philadelphia ballpark, opened 1909</p>
-              </div>
+            <dl className="space-y-3 mb-6">
+              {stadiumFacts.map(([term, value]) => (
+                <div key={term} className="grid grid-cols-[120px_1fr] gap-4 text-sm">
+                  <dt className="text-neutral-500">{term}</dt>
+                  <dd className="text-neutral-800">{value}</dd>
+                </div>
+              ))}
+            </dl>
 
-              <p className="font-serif text-[15px] leading-7 text-neutral-700 mb-6">
-                Opened in 1909, Shibe Park helped define the modern American ballpark. Its concrete-and-steel construction,
-                formal exterior, and civic scale marked a break from the earlier wooden grounds of professional baseball.
-                For Quoin, it is a near-ideal first subject: a stadium where architecture, urban ambition, and sporting memory meet.
-              </p>
-
-              <dl className="space-y-3 mb-6">
-                {stadiumFacts.map(([term, value]) => (
-                  <div key={term} className="grid grid-cols-[120px_1fr] gap-4 text-sm">
-                    <dt className="text-neutral-500">{term}</dt>
-                    <dd className="text-neutral-800">{value}</dd>
-                  </div>
-                ))}
-              </dl>
-
-              <p className="font-serif text-sm italic text-neutral-500">
-                Drawn from archival reference and conceived as part of Quoin’s first series on the great American sporting venues.
-              </p>
-            </section>
-          </aside>
+            <p className="font-serif text-sm italic text-neutral-500">
+              Drawn from archival reference and conceived as part of Quoin’s first series on the great American sporting venues.
+            </p>
+          </section>
         </div>
 
         <section className="mt-20 border-t border-neutral-200 pt-10">

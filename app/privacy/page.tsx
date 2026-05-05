@@ -17,28 +17,15 @@ export default function PrivacyPage() {
 
         <div className="flex flex-col gap-6 font-serif text-base leading-relaxed text-inkSoft">
           <p>
-            Quoin collects only the information necessary to correspond with visitors, respond to inquiries,
-            and notify subscribers about studio updates and releases.
+            If you write to Quoin or submit your email through byquoin.com, we may retain your contact information
+            in order to respond, correspond, and share studio updates.
           </p>
           <p>
-            If you submit your email address through byquoin.com or write to us directly, we may retain your
-            contact information and any message you send. We use that information only for Quoin correspondence,
-            including release notices, studio updates, and replies to specific inquiries.
+            We do not sell personal information. We may use standard third-party services necessary to operate the
+            site and manage correspondence.
           </p>
           <p>
-            We do not sell personal information, and we do not share it with third parties except as reasonably
-            necessary to operate the website, deliver email, or comply with legal obligations.
-          </p>
-          <p>
-            This site may use basic analytics, server logs, or platform-level tools that collect standard technical
-            information such as browser type, device information, referring pages, and general usage patterns.
-          </p>
-          <p>
-            You may request removal from future email correspondence at any time by replying to an email or writing
-            to <a href="mailto:press@byquoin.com" className="text-ink hover:text-inkSoft transition-colors">press@byquoin.com</a>.
-          </p>
-          <p>
-            Questions about this policy may be directed to <a href="mailto:press@byquoin.com" className="text-ink hover:text-inkSoft transition-colors">press@byquoin.com</a>.
+            To update or remove your information, write to <a href="mailto:press@byquoin.com" className="text-ink hover:text-inkSoft transition-colors">press@byquoin.com</a>.
           </p>
         </div>
       </div>

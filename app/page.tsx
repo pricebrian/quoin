@@ -68,7 +68,7 @@ export default function Home() {
         </nav>
 
         {/* Wordmark */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center z-10 text-center px-6">
+        <div className="absolute inset-0 flex flex-col items-center justify-center z-10 text-center px-6 pointer-events-none">
           <h1
             className="font-serif leading-none"
             style={{

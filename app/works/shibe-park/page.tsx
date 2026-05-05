@@ -25,6 +25,29 @@ const stadiumFacts = [
   ['Status', 'Demolished'],
 ];
 
+const otherPrints = [
+  {
+    title: 'Ebbets Field',
+    subtitle: 'Brooklyn, New York',
+    note: 'Placeholder for upcoming release page',
+  },
+  {
+    title: 'Original Yankee Stadium',
+    subtitle: 'Bronx, New York',
+    note: 'Placeholder for flagship stadium edition',
+  },
+  {
+    title: 'Forbes Field',
+    subtitle: 'Pittsburgh, Pennsylvania',
+    note: 'Placeholder for future ballpark print',
+  },
+  {
+    title: 'Polo Grounds',
+    subtitle: 'Upper Manhattan, New York',
+    note: 'Placeholder for future ballpark print',
+  },
+];
+
 export default function ShibeParkPage() {
   return (
     <div className="min-h-screen bg-white text-[#171717] flex flex-col">
@@ -69,7 +92,7 @@ export default function ShibeParkPage() {
               <p className="font-serif text-sm text-neutral-500 mt-2">Unframed. Framed editions from US$425.</p>
             </div>
 
-            <div className="space-y-3 mb-10">
+            <div className="space-y-3 mb-5">
               <a
                 href="mailto:press@byquoin.com?subject=Shibe%20Park%20inquiry"
                 className="block w-full bg-neutral-900 text-white text-center font-mono text-xs tracking-[0.18em] uppercase px-5 py-4 hover:bg-neutral-700 transition-colors"
@@ -82,6 +105,18 @@ export default function ShibeParkPage() {
               >
                 Request Release Notice
               </button>
+            </div>
+
+            <div className="grid grid-cols-3 gap-px bg-neutral-200 border border-neutral-200 mb-10">
+              {['Save', 'View in Room', 'Share'].map((label) => (
+                <button
+                  key={label}
+                  type="button"
+                  className="bg-white px-3 py-4 text-center font-mono text-[11px] tracking-[0.18em] uppercase text-neutral-600 hover:text-neutral-900 transition-colors"
+                >
+                  {label}
+                </button>
+              ))}
             </div>
 
             <section className="border-t border-neutral-200 pt-6 mb-10">
@@ -123,6 +158,31 @@ export default function ShibeParkPage() {
             </section>
           </aside>
         </div>
+
+        <section className="mt-20 border-t border-neutral-200 pt-10">
+          <div className="mb-8 flex items-end justify-between gap-6">
+            <div>
+              <h2 className="font-serif text-[28px] leading-tight text-neutral-900">Other ballpark prints</h2>
+              <p className="font-serif text-sm text-neutral-500 mt-2">
+                Placeholder sections for future Quoin editions and additional stadium release pages.
+              </p>
+            </div>
+            <span className="hidden md:block font-mono text-[11px] tracking-[0.22em] uppercase text-neutral-400">Series I</span>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-px bg-neutral-200 border border-neutral-200">
+            {otherPrints.map((print) => (
+              <div key={print.title} className="bg-white p-6 min-h-[300px] flex flex-col">
+                <div className="aspect-[4/5] border border-neutral-200 bg-[#fafaf8] mb-5 flex items-center justify-center">
+                  <span className="font-mono text-[11px] tracking-[0.18em] uppercase text-neutral-400">Coming Soon</span>
+                </div>
+                <h3 className="font-serif text-xl text-neutral-900 mb-1">{print.title}</h3>
+                <p className="font-serif text-sm text-neutral-500 mb-3">{print.subtitle}</p>
+                <p className="font-serif text-sm leading-6 text-neutral-600 mt-auto">{print.note}</p>
+              </div>
+            ))}
+          </div>
+        </section>
       </main>
 
       <SiteFooter />

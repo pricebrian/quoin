@@ -1,6 +1,7 @@
 import Nav from '@/components/Nav';
 import SectionMarker from '@/components/SectionMarker';
 import HairlineRule from '@/components/HairlineRule';
+import SiteFooter from '@/components/SiteFooter';
 import { archives } from '@/content/archives';
 
 export const metadata = {
@@ -52,17 +53,30 @@ export default function SourcesPage() {
 
       <div className="mt-16">
         <HairlineRule className="mb-6" />
-        <p className="font-mono text-xs text-inkFaint leading-relaxed">
-          Sources current as of April 2026. Additional repositories will be added as research progresses.
-          If you are an archivist with relevant holdings and we have not yet contacted you, we would
-          welcome correspondence at{' '}
-          <a href="mailto:archives@byquoin.com" className="hover:text-ink transition-colors">
-            archives@byquoin.com
-          </a>
-          .
-        </p>
+        <div className="flex flex-col gap-4 max-w-[720px]">
+          <p className="font-mono text-xs text-inkFaint leading-relaxed">
+            Sources current as of April 2026. Additional repositories will be added as research progresses.
+            If you are an archivist with relevant holdings and we have not yet contacted you, we would
+            welcome correspondence at{' '}
+            <a href="mailto:archives@byquoin.com" className="hover:text-ink transition-colors">
+              archives@byquoin.com
+            </a>
+            .
+          </p>
+          <p className="font-serif text-sm text-inkSoft leading-relaxed">
+            Quoin works from primary source materials and credits the repositories consulted in the research and
+            composition of each plate. References to archives and collections are provided for source identification
+            and acknowledgment only; unless expressly stated, they do not imply endorsement, partnership, or
+            affiliation.
+          </p>
+          <p className="font-serif text-sm text-inkSoft leading-relaxed">
+            Rights status varies by item. Quoin reviews copyright, attribution, and reproduction requirements on an
+            item-by-item basis and seeks permission where required before commercial use.
+          </p>
+        </div>
       </div>
       </div>
+      <SiteFooter />
     </div>
   );
 }

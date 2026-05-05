@@ -1,6 +1,7 @@
 import Nav from '@/components/Nav';
 import SectionMarker from '@/components/SectionMarker';
 import HairlineRule from '@/components/HairlineRule';
+import SiteFooter from '@/components/SiteFooter';
 
 export const metadata = {
   title: 'Studio — Quoin',
@@ -18,7 +19,7 @@ export default function StudioPage() {
 
       <div className="flex flex-col gap-6">
         <p className="font-serif text-base leading-relaxed text-inkSoft">
-          Quoin is a small independent press based in Cleveland, Ohio. We publish a series of architectural
+          Quoin is an independent print studio in Venice, California. We publish a series of architectural
           prints depicting the great American sporting venues — stadiums, ballparks, racetracks, and arenas
           — drawn from primary archival reference.
         </p>
@@ -34,8 +35,8 @@ export default function StudioPage() {
 
         <p className="font-serif text-base leading-relaxed text-inkSoft">
           The first series of twelve plates covers buildings constructed between 1895 and 1930 — the era
-          when the modern American stadium took form, largely under the direction of a single Cleveland
-          firm, Osborn Engineering. Six of the twelve plates depict Osborn buildings.
+          when the modern American stadium took form, with six of the twelve plates depicting buildings
+          designed by Osborn Engineering.
         </p>
 
         <p className="font-serif text-base leading-relaxed text-inkSoft">
@@ -44,9 +45,6 @@ export default function StudioPage() {
           editions of 250 are available alongside open editions for the unframed prints.
         </p>
 
-        <p className="font-serif text-base leading-relaxed text-inkSoft">
-          The press is run by Brian Price.
-        </p>
       </div>
 
       <div className="mt-16">
@@ -83,6 +81,7 @@ export default function StudioPage() {
         </div>
       </div>
       </div>
+      <SiteFooter />
     </div>
   );
 }

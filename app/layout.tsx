@@ -16,7 +16,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: 'Quoin — Drawn from the Archive',
-  description: 'A fine-press print studio in Venice, California. Architectural prints of the great American sporting venues.',
+  description: 'A fine art print studio in Venice, California. Architectural prints of the great American sporting venues.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

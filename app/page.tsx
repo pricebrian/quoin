@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import SiteFooter from '@/components/SiteFooter';
 
 export default function Home() {
   const [email, setEmail] = useState('');
@@ -160,10 +161,7 @@ export default function Home() {
       </section>
 
       {/* ── BOTTOM CHROME ────────────────────────────────────────── */}
-      <footer className="bg-paper border-t px-8 md:px-14 py-3 flex items-center justify-between" style={{ borderTopColor: '#888780', borderTopWidth: '1px' }}>
-        <span className="font-mono text-xs tracking-widest text-inkFaint">QUOIN · BYQUOIN.COM</span>
-        <span className="font-mono text-xs tracking-widest text-inkFaint">© 2026</span>
-      </footer>
+      <SiteFooter />
 
     </main>
   );

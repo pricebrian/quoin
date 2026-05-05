@@ -102,7 +102,7 @@ export default function Home() {
             className="font-serif leading-relaxed text-inkSoft"
             style={{ fontSize: 'clamp(1.05rem, 1.5vw, 1.2rem)' }}
           >
-            Quoin is a fine-press print studio opening in Venice, California. We publish
+            Quoin is a fine art print studio in Venice, California. We publish
             architectural prints of the great American sporting venues — drawn from primary
             archival reference, printed in two colorways, and issued in numbered editions.
           </p>

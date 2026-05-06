@@ -1,0 +1,174 @@
+import type { WorkPreview } from '@/components/WorkPreviewPage';
+
+const sharedDetails: Array<[string, string]> = [
+  ['Materials', 'Archival pigment print on acid-free cotton rag paper'],
+  ['Size', '18 × 24 in | 46 × 61 cm'],
+  ['Rarity', 'Numbered edition of 250'],
+  ['Medium', 'Architectural print'],
+  ['Signature', 'Numbered and stamped by Quoin'],
+  ['Certificate of authenticity', 'Included as a letterpress provenance card'],
+  ['Frame', 'Available framed in white oak or matte black'],
+  ['Publisher', 'Quoin'],
+];
+
+export const workPreviews: WorkPreview[] = [
+  {
+    slug: 'shibe-park',
+    title: 'Shibe Park',
+    year: '1909',
+    locationLine: 'Philadelphia, Pennsylvania',
+    stadiumLine: 'Philadelphia ballpark, opened 1909',
+    mediumLine: 'Archival pigment print on acid-free cotton rag paper',
+    sizeLine: '18 × 24 in | 46 × 61 cm',
+    editionLine: 'Edition of 250',
+    priceLine: 'US$245',
+    priceNote: 'Unframed. Framed editions from US$425.',
+    inquirySubject: 'Shibe%20Park%20inquiry',
+    blurbLines: [
+      'Part of the first Quoin series of architectural prints drawn from primary archival reference.',
+      'Includes a letterpress provenance card citing the archival sources consulted.',
+    ],
+    details: sharedDetails,
+    facts: [
+      ['Location', 'Philadelphia, Pennsylvania'],
+      ['Opened', '1909'],
+      ['Later name', 'Connie Mack Stadium'],
+      ['Primary tenants', 'Philadelphia Athletics; Philadelphia Phillies'],
+      ['Status', 'Demolished'],
+    ],
+    description:
+      'Opened in 1909, Shibe Park helped define the modern American ballpark. Its concrete-and-steel construction, formal exterior, and civic scale marked a break from the earlier wooden grounds of professional baseball. For Quoin, it is a near-ideal first subject: a stadium where architecture, urban ambition, and sporting memory meet.',
+    closingNote:
+      'Drawn from archival reference and conceived as part of Quoin’s first series on the great American sporting venues.',
+    placeholderLabel: 'Example product-image treatment for review',
+    placeholderTone: 'sepia',
+  },
+  {
+    slug: 'ebbets-field',
+    title: 'Ebbets Field',
+    year: '1913',
+    locationLine: 'Brooklyn, New York',
+    stadiumLine: 'Brooklyn ballpark, opened 1913',
+    mediumLine: 'Archival pigment print on acid-free cotton rag paper',
+    sizeLine: '18 × 24 in | 46 × 61 cm',
+    editionLine: 'Edition of 250',
+    priceLine: 'US$245',
+    priceNote: 'Unframed. Framed editions from US$425.',
+    inquirySubject: 'Ebbets%20Field%20inquiry',
+    blurbLines: [
+      'Part of the first Quoin series of architectural prints drawn from primary archival reference.',
+      'Designed as a collector object with provenance, restraint, and neighborhood memory at its center.',
+    ],
+    details: sharedDetails,
+    facts: [
+      ['Location', 'Brooklyn, New York'],
+      ['Opened', '1913'],
+      ['Primary tenant', 'Brooklyn Dodgers'],
+      ['Character', 'Compact urban ballpark'],
+      ['Status', 'Demolished'],
+    ],
+    description:
+      'Ebbets Field is one of the great lost places in American sport: intimate, urban, and inseparable from the borough around it. For Quoin, the appeal lies in the stadium’s emotional afterlife as much as its architecture — a place where neighborhood identity and sporting memory remain tightly bound.',
+    closingNote:
+      'Conceived as a print about atmosphere, loss, and borough-scale monument rather than merchandise nostalgia.',
+    placeholderLabel: 'Example archival-image placeholder for Brooklyn release',
+    placeholderTone: 'stone',
+  },
+  {
+    slug: 'yankee-stadium',
+    title: 'Original Yankee Stadium',
+    year: '1923',
+    locationLine: 'Bronx, New York',
+    stadiumLine: 'Bronx stadium, opened 1923',
+    mediumLine: 'Archival pigment print on acid-free cotton rag paper',
+    sizeLine: '18 × 24 in | 46 × 61 cm',
+    editionLine: 'Edition of 250',
+    priceLine: 'US$275',
+    priceNote: 'Unframed. Framed editions from US$450.',
+    inquirySubject: 'Original%20Yankee%20Stadium%20inquiry',
+    blurbLines: [
+      'Part of the first Quoin series of architectural prints drawn from primary archival reference.',
+      'Positioned as a flagship edition in the opening series on American sporting monuments.',
+    ],
+    details: sharedDetails,
+    facts: [
+      ['Location', 'Bronx, New York'],
+      ['Opened', '1923'],
+      ['Nickname', 'The House That Ruth Built'],
+      ['Scale', 'Three-tier monumental bowl'],
+      ['Status', 'Replaced and demolished'],
+    ],
+    description:
+      'The original Yankee Stadium was built for scale, ceremony, and the public theater of American sport. Its architecture carried the confidence of a national monument, making it a natural flagship subject for Quoin’s first group of editions.',
+    closingNote:
+      'A study in mass, geometry, and the oversized mythology of twentieth-century New York sport.',
+    placeholderLabel: 'Example flagship print mock-up for review',
+    placeholderTone: 'gray',
+  },
+  {
+    slug: 'fenway-park',
+    title: 'Fenway Park',
+    year: '1912',
+    locationLine: 'Boston, Massachusetts',
+    stadiumLine: 'Boston ballpark, opened 1912',
+    mediumLine: 'Archival pigment print on acid-free cotton rag paper',
+    sizeLine: '18 × 24 in | 46 × 61 cm',
+    editionLine: 'Edition of 250',
+    priceLine: 'US$245',
+    priceNote: 'Unframed. Framed editions from US$425.',
+    inquirySubject: 'Fenway%20Park%20inquiry',
+    blurbLines: [
+      'Part of the first Quoin series of architectural prints drawn from primary archival reference.',
+      'Focused on continuity: an early-twentieth-century park still legible in the present tense.',
+    ],
+    details: sharedDetails,
+    facts: [
+      ['Location', 'Boston, Massachusetts'],
+      ['Opened', '1912'],
+      ['Defining feature', 'Green Monster left-field wall'],
+      ['Character', 'Jewel-box urban ballpark'],
+      ['Status', 'Active'],
+    ],
+    description:
+      'Fenway Park offers a rare sense of architectural continuity. Its compressed footprint, evolving surfaces, and unmistakable silhouette give Quoin a subject that feels historic without feeling remote — a living survivor of the early stadium era.',
+    closingNote:
+      'Intended as a collector print about endurance, urban texture, and the long physical memory of baseball.',
+    placeholderLabel: 'Example active-ballpark image treatment',
+    placeholderTone: 'green',
+  },
+  {
+    slug: 'wrigley-field',
+    title: 'Wrigley Field',
+    year: '1914',
+    locationLine: 'Chicago, Illinois',
+    stadiumLine: 'Chicago ballpark, opened 1914',
+    mediumLine: 'Archival pigment print on acid-free cotton rag paper',
+    sizeLine: '18 × 24 in | 46 × 61 cm',
+    editionLine: 'Edition of 250',
+    priceLine: 'US$245',
+    priceNote: 'Unframed. Framed editions from US$425.',
+    inquirySubject: 'Wrigley%20Field%20inquiry',
+    blurbLines: [
+      'Part of the first Quoin series of architectural prints drawn from primary archival reference.',
+      'Developed as a study in neighborhood fabric, rooftop culture, and daylight baseball ritual.',
+    ],
+    details: sharedDetails,
+    facts: [
+      ['Location', 'Chicago, Illinois'],
+      ['Opened', '1914'],
+      ['Defining feature', 'Ivy-covered outfield walls'],
+      ['Character', 'Neighborhood-embedded ballpark'],
+      ['Status', 'Active'],
+    ],
+    description:
+      'Wrigley Field is inseparable from the city block around it. Rooftops, brick, daylight, and ritual all shape the venue’s identity, giving Quoin a subject where architecture extends beyond the bowl itself into the surrounding neighborhood fabric.',
+    closingNote:
+      'Framed as an architectural portrait of baseball woven directly into the life of the city.',
+    placeholderLabel: 'Example neighborhood-ballpark mock-up for review',
+    placeholderTone: 'blue',
+  },
+];
+
+export function getWorkPreview(slug: string) {
+  return workPreviews.find((work) => work.slug === slug);
+}

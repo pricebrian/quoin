@@ -1,14 +1,14 @@
 import WorkPreviewPage from '@/components/WorkPreviewPage';
 import { getWorkPreview, workPreviews } from '@/lib/workPreviews';
 
-const work = getWorkPreview('shibe-park');
+const work = getWorkPreview('ebbets-field');
 
 export const metadata = {
-  title: 'Shibe Park — Quoin',
+  title: 'Ebbets Field — Quoin',
   description: 'Product page study for a Quoin architectural print edition.',
 };
 
-export default function ShibeParkPage() {
+export default function EbbetsFieldPage() {
   if (!work) return null;
   return <WorkPreviewPage work={work} otherPrints={workPreviews.filter((item) => item.slug !== work.slug)} />;
 }

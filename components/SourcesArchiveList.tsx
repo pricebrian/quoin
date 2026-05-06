@@ -25,7 +25,7 @@ export default function SourcesArchiveList({ archives }: { archives: Archive[] }
 
   const previewFrame = (className: string) => (
     <div className={className}>
-      <div className="relative mx-auto aspect-[4/5] w-full max-w-[280px] overflow-hidden bg-paper sm:max-w-[320px] lg:ml-auto lg:mr-0 lg:max-w-[340px] xl:max-w-[380px]">
+      <div className="relative aspect-[4/5] w-full overflow-hidden bg-paper">
         {archivePreviews.slice(0, 4).map((archive, i) => {
           if (!archive.previewImage) return null;
 
@@ -43,14 +43,19 @@ export default function SourcesArchiveList({ archives }: { archives: Archive[] }
                 alt={archive.name}
                 fill
                 sizes="(max-width: 1023px) 100vw, (min-width: 1280px) 28vw, (min-width: 1024px) 24vw, 0px"
-                className="object-contain opacity-90 mix-blend-multiply"
+                className="object-cover"
                 priority={i === 0}
               />
-              <div className="absolute inset-0 bg-paper/20" />
+              <div className="absolute inset-0 bg-paper/10" />
             </div>
           );
         })}
 
+        <div
+          className={`absolute inset-0 border border-inkFaint/30 transition-opacity duration-300 ${
+            activePreview ? 'opacity-100' : 'opacity-0'
+          }`}
+        />
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import Nav from '@/components/Nav';
 import SectionMarker from '@/components/SectionMarker';
 import HairlineRule from '@/components/HairlineRule';
 import SiteFooter from '@/components/SiteFooter';
+import SourcesArchiveList from '@/components/SourcesArchiveList';
 import { archives } from '@/content/archives';
 
 export const metadata = {
@@ -13,7 +14,7 @@ export default function SourcesPage() {
   return (
     <div className="min-h-screen bg-paper flex flex-col">
       <Nav />
-      <div className="flex-1 px-8 md:px-14 py-16 max-w-[860px]">
+      <div className="flex-1 w-full max-w-[1440px] px-8 md:px-14 py-16">
       <SectionMarker>III — Sources</SectionMarker>
 
       <h1 className="font-serif text-4xl text-ink mb-10 leading-tight">The Archives</h1>
@@ -24,32 +25,7 @@ export default function SourcesPage() {
         architecture. We are grateful to their archivists for preserving and making accessible these records.
       </p>
 
-      <div className="flex flex-col">
-        {archives.map((archive, i) => (
-          <div key={archive.name}>
-            <div className="py-6">
-              <h2 className="font-serif font-bold text-base text-ink mb-2 leading-snug">
-                {archive.name}
-              </h2>
-              <p className="font-serif text-sm text-inkSoft leading-relaxed mb-3">
-                {archive.description}
-              </p>
-              <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:gap-6">
-                <span className="font-mono text-xs italic text-inkFaint">{archive.plates}</span>
-                <a
-                  href={archive.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-mono text-xs tracking-widest text-inkFaint hover:text-ink transition-colors"
-                >
-                  → {archive.url.replace(/^https?:\/\//, '')}
-                </a>
-              </div>
-            </div>
-            {i < archives.length - 1 && <HairlineRule />}
-          </div>
-        ))}
-      </div>
+      <SourcesArchiveList archives={archives} />
 
       <div className="mt-16">
         <HairlineRule className="mb-6" />

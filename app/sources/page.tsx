@@ -19,9 +19,9 @@ export default function SourcesPage() {
       <h1 className="font-serif text-4xl text-ink mb-10 leading-tight">The Archives</h1>
 
       <p className="font-serif text-base leading-relaxed text-inkSoft mb-16 max-w-[680px]">
-        Every Quoin plate is composed from primary archival reference. The following institutions hold
-        the documents we work from. We are grateful to their archivists for the work of preserving and
-        making accessible the records of American civic and sporting architecture.
+        Quoin’s research begins with primary source material. The following institutions are among the
+        repositories being consulted as the studio develops its initial body of work on American sporting
+        architecture. We are grateful to their archivists for preserving and making accessible these records.
       </p>
 
       <div className="flex flex-col">
@@ -64,14 +64,12 @@ export default function SourcesPage() {
             .
           </p>
           <p className="font-serif text-sm text-inkSoft leading-relaxed">
-            Quoin works from primary source materials and credits the repositories consulted in the research and
-            composition of each plate. References to archives and collections are provided for source identification
-            and acknowledgment only; unless expressly stated, they do not imply endorsement, partnership, or
-            affiliation.
+            References to archives and collections are provided for research, source identification, and
+            acknowledgment only; unless expressly stated, they do not imply endorsement, partnership, or affiliation.
           </p>
           <p className="font-serif text-sm text-inkSoft leading-relaxed">
             Rights status varies by item. Quoin reviews copyright, attribution, and reproduction requirements on an
-            item-by-item basis and seeks permission where required before commercial use.
+            item-by-item basis as the work develops.
           </p>
         </div>
       </div>

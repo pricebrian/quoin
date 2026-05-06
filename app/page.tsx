@@ -103,15 +103,15 @@ export default function Home() {
             className="font-serif leading-relaxed text-inkSoft"
             style={{ fontSize: 'clamp(1.05rem, 1.5vw, 1.2rem)' }}
           >
-            Quoin is a fine art print studio in Venice, California. We publish
-            architectural prints of the great American sporting venues — drawn from primary
-            archival reference, printed in two colorways, and issued in numbered editions.
+            Quoin is an independent print studio in Venice, California, developing a series of
+            architectural works drawn from primary archival reference.
           </p>
           <p
             className="font-serif leading-relaxed text-inkFaint mt-6"
             style={{ fontSize: 'clamp(1.05rem, 1.5vw, 1.2rem)' }}
           >
-            The first series of twelve plates is in production. The studio opens this autumn.
+            The first body of work considers the great American sporting venues as subjects of
+            architecture, memory, and print.
           </p>
         </div>
       </section>

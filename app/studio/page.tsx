@@ -19,30 +19,25 @@ export default function StudioPage() {
 
       <div className="flex flex-col gap-6">
         <p className="font-serif text-base leading-relaxed text-inkSoft">
-          Quoin is an independent print studio in Venice, California. We publish a series of architectural
-          prints depicting the great American sporting venues — stadiums, ballparks, racetracks, and arenas
-          — drawn from primary archival reference.
+          Quoin is an independent print studio in Venice, California. The studio is currently developing
+          a body of architectural work drawn from primary archival reference.
         </p>
 
         <p className="font-serif text-base leading-relaxed text-inkSoft">
-          The premise is simple. The category of stadium prints is dominated by decorative work composed
-          from photographs and Wikipedia stats. We work differently: from the original architectural drawings
-          and period photography held in named archives — the Osborn Engineering Records at Cleveland State
-          University, the HABS/HAER collection at the Library of Congress, university archives at Yale,
-          Notre Dame, Michigan, Ohio State. Every plate cites its sources on the work itself and in an
-          accompanying provenance card.
+          The initial focus is on the great American sporting venues — stadiums, ballparks, racetracks,
+          and arenas — approached not as merchandise subjects but as works of architecture, civic memory,
+          and regional identity.
         </p>
 
         <p className="font-serif text-base leading-relaxed text-inkSoft">
-          The first series of twelve plates covers buildings constructed between 1895 and 1930 — the era
-          when the modern American stadium took form, with six of the twelve plates depicting buildings
-          designed by Osborn Engineering.
+          Research begins with original drawings, period photography, and institutional collections held in
+          public archives, libraries, and university repositories. Quoin is especially interested in the
+          architectural record of the early twentieth century, when the modern American stadium first took form.
         </p>
 
         <p className="font-serif text-base leading-relaxed text-inkSoft">
-          Each plate is printed in two colorways: cyanotype blue and sepia cream. Sizes range from
-          12 × 18 inches unframed to 30 × 40 inches framed in white oak or matte black. Numbered
-          editions of 250 are available alongside open editions for the unframed prints.
+          Stadiums are the opening subject, not the limit of the project. Over time, the studio intends to
+          extend the same editorial and print approach into adjacent areas of American built history.
         </p>
 
       </div>

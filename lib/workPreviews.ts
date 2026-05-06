@@ -42,6 +42,9 @@ export const workPreviews: WorkPreview[] = [
       'Drawn from archival reference and conceived as part of Quoin’s first series on the great American sporting venues.',
     placeholderLabel: 'Example product-image treatment for review',
     placeholderTone: 'sepia',
+    placeholderAccent: '#8b6b4a',
+    placeholderGeometry: 'facade',
+    placeholderCaption: 'Beaux-Arts facade / concrete-and-steel park',
   },
   {
     slug: 'ebbets-field',
@@ -73,6 +76,9 @@ export const workPreviews: WorkPreview[] = [
       'Conceived as a print about atmosphere, loss, and borough-scale monument rather than merchandise nostalgia.',
     placeholderLabel: 'Example archival-image placeholder for Brooklyn release',
     placeholderTone: 'stone',
+    placeholderAccent: '#6b625b',
+    placeholderGeometry: 'diamond',
+    placeholderCaption: 'Neighborhood bowl / asymmetrical interior',
   },
   {
     slug: 'yankee-stadium',
@@ -104,6 +110,9 @@ export const workPreviews: WorkPreview[] = [
       'A study in mass, geometry, and the oversized mythology of twentieth-century New York sport.',
     placeholderLabel: 'Example flagship print mock-up for review',
     placeholderTone: 'gray',
+    placeholderAccent: '#5d6570',
+    placeholderGeometry: 'tiers',
+    placeholderCaption: 'Monumental tiers / imperial scale',
   },
   {
     slug: 'fenway-park',
@@ -135,6 +144,9 @@ export const workPreviews: WorkPreview[] = [
       'Intended as a collector print about endurance, urban texture, and the long physical memory of baseball.',
     placeholderLabel: 'Example active-ballpark image treatment',
     placeholderTone: 'green',
+    placeholderAccent: '#567a63',
+    placeholderGeometry: 'monster',
+    placeholderCaption: 'Urban bowl / surviving twentieth-century wall',
   },
   {
     slug: 'wrigley-field',
@@ -166,6 +178,9 @@ export const workPreviews: WorkPreview[] = [
       'Framed as an architectural portrait of baseball woven directly into the life of the city.',
     placeholderLabel: 'Example neighborhood-ballpark mock-up for review',
     placeholderTone: 'blue',
+    placeholderAccent: '#486a7c',
+    placeholderGeometry: 'ivy',
+    placeholderCaption: 'Rooftops / ivy / neighborhood fabric',
   },
 ];
 

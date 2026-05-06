@@ -20,6 +20,9 @@ export type WorkPreview = {
   closingNote: string;
   placeholderLabel: string;
   placeholderTone?: 'stone' | 'blue' | 'green' | 'sepia' | 'gray';
+  placeholderAccent?: string;
+  placeholderGeometry?: 'facade' | 'diamond' | 'tiers' | 'monster' | 'ivy';
+  placeholderCaption?: string;
 };
 
 const toneClasses = {
@@ -32,6 +35,7 @@ const toneClasses = {
 
 export default function WorkPreviewPage({ work, otherPrints }: { work: WorkPreview; otherPrints: WorkPreview[] }) {
   const tone = toneClasses[work.placeholderTone ?? 'gray'];
+  const accent = work.placeholderAccent ?? '#6b7280';
 
   return (
     <div className="min-h-screen bg-white text-[#171717] flex flex-col">
@@ -46,12 +50,58 @@ export default function WorkPreviewPage({ work, otherPrints }: { work: WorkPrevi
         <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1.15fr)_420px] gap-12 md:gap-16 items-start">
           <section>
             <div className={`aspect-[4/5] w-full border bg-gradient-to-b ${tone} flex items-center justify-center`}>
-              <div className="text-center px-8 max-w-lg">
+              <div className="text-center px-8 max-w-lg w-full">
                 <p className="font-mono text-[11px] tracking-[0.22em] uppercase text-neutral-400 mb-4">Artwork Preview</p>
-                <div className="mx-auto mb-6 h-[55%] max-h-[360px] w-[72%] border border-current/20 bg-white/60 shadow-[0_18px_50px_rgba(0,0,0,0.08)] flex items-center justify-center">
-                  <div className="w-[78%] h-[78%] border border-dashed border-current/30 flex flex-col items-center justify-center px-6">
-                    <p className="font-serif text-2xl md:text-4xl mb-2">{work.title}</p>
-                    <p className="font-serif text-sm md:text-base opacity-70">{work.placeholderLabel}</p>
+                <div className="mx-auto mb-6 h-[55%] max-h-[360px] w-[72%] border border-current/20 bg-white/70 shadow-[0_18px_50px_rgba(0,0,0,0.08)] flex items-center justify-center p-5">
+                  <div className="relative w-full h-full border border-current/15 overflow-hidden" style={{ color: accent }}>
+                    <div className="absolute inset-0 opacity-[0.10]" style={{ backgroundImage: `linear-gradient(${accent} 1px, transparent 1px), linear-gradient(90deg, ${accent} 1px, transparent 1px)`, backgroundSize: '22px 22px' }} />
+                    {work.placeholderGeometry === 'facade' && (
+                      <>
+                        <div className="absolute left-[14%] right-[14%] top-[16%] h-[14%] border-2" />
+                        <div className="absolute left-[20%] right-[20%] top-[30%] h-[9%] border-2" />
+                        <div className="absolute left-[19%] right-[19%] bottom-[16%] h-[34%] border-2" />
+                        <div className="absolute left-[28%] top-[46%] bottom-[16%] w-[11%] border-2" />
+                        <div className="absolute left-[44.5%] top-[46%] bottom-[16%] w-[11%] border-2" />
+                        <div className="absolute right-[28%] top-[46%] bottom-[16%] w-[11%] border-2" />
+                      </>
+                    )}
+                    {work.placeholderGeometry === 'diamond' && (
+                      <>
+                        <div className="absolute left-[18%] right-[18%] top-[18%] bottom-[18%] border-2 rotate-45" />
+                        <div className="absolute left-[24%] right-[24%] top-[24%] bottom-[24%] border" />
+                        <div className="absolute left-[12%] right-[12%] top-1/2 border-t-2" />
+                        <div className="absolute top-[12%] bottom-[12%] left-1/2 border-l-2" />
+                      </>
+                    )}
+                    {work.placeholderGeometry === 'tiers' && (
+                      <>
+                        <div className="absolute left-[10%] right-[10%] bottom-[16%] h-[16%] border-2 rounded-[50%]" />
+                        <div className="absolute left-[17%] right-[17%] bottom-[28%] h-[15%] border-2 rounded-[50%]" />
+                        <div className="absolute left-[25%] right-[25%] bottom-[40%] h-[14%] border-2 rounded-[50%]" />
+                        <div className="absolute left-[34%] right-[34%] bottom-[52%] h-[13%] border-2 rounded-[50%]" />
+                      </>
+                    )}
+                    {work.placeholderGeometry === 'monster' && (
+                      <>
+                        <div className="absolute left-[16%] right-[18%] bottom-[16%] top-[56%] border-2" />
+                        <div className="absolute right-[16%] top-[16%] bottom-[16%] w-[18%] border-2" />
+                        <div className="absolute left-[16%] right-[16%] bottom-[16%] border-t-2" />
+                        <div className="absolute right-[22%] top-[24%] bottom-[24%] border-l-2" />
+                      </>
+                    )}
+                    {work.placeholderGeometry === 'ivy' && (
+                      <>
+                        <div className="absolute inset-x-[14%] top-[18%] bottom-[18%] border-2" />
+                        <div className="absolute inset-y-[18%] left-[14%] w-[7%] opacity-70" style={{ background: 'repeating-radial-gradient(circle at 30% 20%, currentColor 0 6px, transparent 6px 18px)' }} />
+                        <div className="absolute inset-y-[18%] right-[14%] w-[7%] opacity-70" style={{ background: 'repeating-radial-gradient(circle at 70% 35%, currentColor 0 6px, transparent 6px 18px)' }} />
+                        <div className="absolute left-[22%] right-[22%] bottom-[24%] border-t-2" />
+                      </>
+                    )}
+                    <div className="absolute inset-x-[10%] bottom-[10%] text-center px-4">
+                      <p className="font-serif text-[22px] md:text-[30px] leading-tight mb-1">{work.title}</p>
+                      <p className="font-serif text-xs md:text-sm opacity-75">{work.placeholderLabel}</p>
+                      {work.placeholderCaption && <p className="font-mono text-[10px] tracking-[0.18em] uppercase opacity-60 mt-3">{work.placeholderCaption}</p>}
+                    </div>
                   </div>
                 </div>
                 <p className="font-serif text-base md:text-lg text-neutral-500 max-w-md mx-auto leading-relaxed">

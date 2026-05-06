@@ -31,8 +31,10 @@ export default function StudioPage() {
 
         <p className="font-serif text-base leading-relaxed text-inkSoft">
           Research begins with original drawings, period photography, and institutional collections held in
-          public archives, libraries, and university repositories. Quoin is especially interested in the
-          architectural record of the early twentieth century, when the modern American stadium first took form.
+          public archives, libraries, and university repositories. Current inquiries focus on architectural
+          drawings, construction records, period photography, and related rights and reproduction information.
+          Quoin is especially interested in the architectural record of the early twentieth century, when the
+          modern American stadium first took form.
         </p>
 
         <p className="font-serif text-base leading-relaxed text-inkSoft">
@@ -71,8 +73,14 @@ export default function StudioPage() {
           <HairlineRule className="my-2" />
 
           <p className="font-serif text-sm text-inkFaint leading-relaxed">
-            Trade and press inquiries are welcome. We respond personally.
+            Trade, press, and archival inquiries are welcome. We respond personally.
           </p>
+
+          <div className="pt-2">
+            <p className="text-[2rem] leading-none text-inkSoft" style={{ fontFamily: 'var(--font-signature)' }}>
+              Quoin
+            </p>
+          </div>
         </div>
       </div>
       </div>

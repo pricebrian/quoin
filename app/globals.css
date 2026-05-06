@@ -10,6 +10,7 @@
 
   --font-serif: var(--font-lora), Georgia, serif;
   --font-mono: var(--font-jetbrains-mono), monospace;
+  --font-signature: var(--font-signature), 'Brush Script MT', cursive;
 }
 
 body {

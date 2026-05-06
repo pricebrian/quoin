@@ -20,8 +20,9 @@ export default function SourcesPage() {
 
       <p className="font-serif text-base leading-relaxed text-inkSoft mb-16 max-w-[680px]">
         Quoin’s research begins with primary source material. The following institutions are among the
-        repositories being consulted as the studio develops its initial body of work on American sporting
-        architecture. We are grateful to their archivists for preserving and making accessible these records.
+        repositories being identified for consultation as the studio develops its initial body of work on
+        American sporting architecture. We are grateful to their archivists for preserving and making
+        accessible these records.
       </p>
 
       <div className="flex flex-col">
@@ -68,8 +69,9 @@ export default function SourcesPage() {
             acknowledgment only; unless expressly stated, they do not imply endorsement, partnership, or affiliation.
           </p>
           <p className="font-serif text-sm text-inkSoft leading-relaxed">
-            Rights status varies by item. Quoin reviews copyright, attribution, and reproduction requirements on an
-            item-by-item basis as the work develops.
+            Quoin’s archival inquiries focus on architectural drawings, construction records, period photography,
+            and related rights, attribution, and reproduction requirements, reviewed on an item-by-item basis as
+            the work develops.
           </p>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Lora, JetBrains_Mono } from 'next/font/google';
+import { Caveat, Lora, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 
 const lora = Lora({
@@ -14,6 +14,12 @@ const jetbrainsMono = JetBrains_Mono({
   display: 'swap',
 });
 
+const caveat = Caveat({
+  subsets: ['latin'],
+  variable: '--font-signature',
+  display: 'swap',
+});
+
 export const metadata: Metadata = {
   title: 'Quoin — Drawn from the Archive',
   description: 'An independent print studio in Venice, California, developing architectural works drawn from archival reference.',
@@ -21,7 +27,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${lora.variable} ${jetbrainsMono.variable}`}>
+    <html lang="en" className={`${lora.variable} ${jetbrainsMono.variable} ${caveat.variable}`}>
       <body>
         <a
           href="#main-content"
